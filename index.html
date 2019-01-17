@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quicksort</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6 col-md-4">
+
+            <form id="form">
+                <div class="form-group">
+                    <label for="array-size">Array size</label>
+                    <input type="number" min="1" class="form-control" id="array-size" placeholder="Array size" value=20 required>
+                </div>
+                <div class="form-group">
+                    <label for="array-size">Interval (ms)</label>
+                    <input type="number" min="1" class="form-control" id="interval-time" placeholder="Interval (ms)" value=500 required>
+                </div>
+                <button class="btn btn-primary" type="submit" id = "createBtn">Create chart</button>
+            </form>
+            <button class="btn btn-primary mt-2" id="sortBtn">Sort</button>
+        </div>
+        <div class="col-12 col-md-8" id="canvasDiv">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+</div>
+
+<script src="js/quicksort.js"></script>
+</body>
+</html>
